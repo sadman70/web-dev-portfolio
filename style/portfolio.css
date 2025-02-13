@@ -54,24 +54,43 @@ nav > ul > li > a{
 }
 
 .btn-primary{
-    background-color: #FD6E0A;
+    
     font-weight: bold;
     font-size: 20px;
-    color: white;
+    color: black;
     padding: 18px 35px;
     border-radius: 10px;
-    border: none;
+    border: #560bad;
+    background-color: #FD6E0A;
+    cursor: pointer;
+    
+}
+
+.btn-primary:hover{
+    top: -30px;
+    left: -30px;
+    color: white;
+    background-color: #560bad; 
+}
+.btn-primary:active{
+   background-color:#560bad;
+   transition: all 0.7s; 
 }
 /* banner styles */
+.banner{
+    display: flex;
+    margin: 0 40px 0 170px; 
+   justify-content: space-between;
+   align-items: center;
+}
 .banner-content{
-  /* height: 60px;   */
-    width: 980px;
+    width: 350px;
 }
 .banner-greeting{
     font-size: 45px;
     font-weight: 600px;
     width: 180px;
-    height: 40px;
+    height: 30px;
 }
 .banner-tittle{
     font-size: 85px;
@@ -83,13 +102,7 @@ nav > ul > li > a{
     width: 425px;
     height: 20px;
 }
-.banner{
-    display: flex;
-     margin: 0 30px 0 160px;
-   justify-content: space-between;
-   align-items: center;
-   
-}
+
 /* main styles */
 main{
    

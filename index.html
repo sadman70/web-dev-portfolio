@@ -13,9 +13,18 @@
             <ul>
                 <li><a class="dark-2" href="">Portfolio</a></li>
                 <li><a class="dark-2" href="">Blog</a></li>
-                <li><a href="">
-                    <button class="btn-primary">Hire Me</button>
-                </a></li>
+                <li>
+            <button class="btn-primary">Hire Me</button> 
+                <script>
+                        // Correctly access the button element
+                        const button = document.getElementsByClassName('btn-primary')[0];
+                    
+                        // Add a click event listener
+                        button.addEventListener('click', function() {
+                          // Change the button's text
+                          button.textContent = 'Hired!';
+                        });
+                      </script></li>
             </ul>
         </nav>
         <div class="banner">
@@ -24,10 +33,10 @@
                 <h1 class="banner-tittle">Sadman Khandokar</h1>
                 <p class="banner-description">Welcome to My Portfolio.
                 </p>
-                <a href=""><button class="btn-primary">Download CV</button></a>
+                <a href="SADMAN KHANDOKAR CV .pdf" download="download"><button class="btn-primary">Download CV</button></a>
                 <a href=""><button class="btn-primary">Contact</button></a>
             </div>
-            <img class="pic" width="827px" height="719px" src="images/শিরোনামহীন ডিজাইন_processed.png" alt="">
+            <img class="pic" width="980px" height="680px" src="images/me.png" alt="">
         </div>
     </header>
     <main>

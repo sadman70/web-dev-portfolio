@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Button Text</title>
+  <style>
+    .btn-primary {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-primary">Hire Me</button>
+
+  <script>
+    // Correctly access the button element
+    const button = document.getElementsByClassName('btn-primary')[0];
+
+    // Add a click event listener
+    button.addEventListener('click', function() {
+      // Change the button's text
+      button.textContent = 'Hired!';
+    });
+  </script>
+</body>
+</html>
