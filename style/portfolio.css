@@ -106,8 +106,12 @@ nav > ul > li > a{
 /* main styles */
 main{
    
-    max-width: 840px; 
+    max-width: 1000px; 
     margin: 0 auto;
+}
+main section{
+    margin-top: 130px ;
+    margin-bottom: 130px;
 }
 
 /* about styles */
@@ -115,7 +119,7 @@ main{
     padding: 130px 100px ;
     border-radius:10px; 
     text-align: center;
-    margin-top: 180px;
+   
     margin-bottom: 100px;
 }
 .about-items{
@@ -137,4 +141,115 @@ main{
 .secondary-bg{
     background-color: #FFF8F3 ;
 }
+.text-center{
+    text-align: center;
+   
+}
+.skills-container{
+    display: flex;
+    
+    gap: 24px;
 
+}
+/* skills styles */
+.skill{
+    padding: 20px;
+    /* width: 460px; */
+    box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    
+}
+.section-tittle {
+     font-weight: bold;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.skill-tittle{
+    font-weight: bold;
+    font-size: 20px;
+}
+.sectin-description {
+    color:"rgba(117, 117, 117, 1)" ;
+    display: flex;
+   
+}
+.skill-description{
+    color:"rgba(117, 117, 117, 1)" ;
+}
+/* resume section styles */
+.resume{
+    width: 1000px;
+    padding: 30px;
+    box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+}
+.resume-container{ 
+    display: flex;
+    
+    gap: 24px;
+}
+.resume-column{
+   
+    
+}
+.resume-column-tittle{
+   color: rgba(71, 71, 71, 1);
+   font-size: 30px;
+   margin-bottom: 30px;
+   
+}
+.experience-tittle{
+   color: rgba(71, 71, 71, 1);
+   font-size: 25px;
+   margin-bottom: 10px;
+}
+.experience-subtittle{
+     color: rgba(117, 117, 117, 1);
+     font-size: 20px;
+     margin-bottom: 20px;
+}
+.experience-description{
+   color: rgba(117, 117, 117, 1);
+   font-size: 16px;
+   margin-bottom: 30px;
+}
+#dn{
+   margin-top: 50px;
+   display: flex;
+ justify-content: center;
+}
+/* footer style */
+footer{
+     display: flex;
+      padding: 130px 230px;  
+      gap: 100px;
+}
+.ftr-clmn{
+   
+   width: 50%;
+}
+footer input[type="text"],  footer input[type="email"] {
+
+    height: 50%;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 20px 30px;
+    margin-bottom: 24px;
+    border: none;
+}
+
+footer textarea {
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 20px 30px;
+    margin-bottom: 24px;
+    border: none
+}

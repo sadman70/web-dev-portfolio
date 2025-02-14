@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Change Button Text</title>
-  <style>
-    .btn-primary {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .btn-primary:hover {
-      background-color: #0056b3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Changing Button</title>
+    <link rel="stylesheet" href="style/new.css">
 </head>
 <body>
-  <button class="btn-primary">Hire Me</button>
-
+  <header></header>
+  <main>
+    <div class="container">
+        <button id="theme-toggle">Bright</button>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="script.js"></script>
   <script>
-    // Correctly access the button element
-    const button = document.getElementsByClassName('btn-primary')[0];
+    const themeToggle = document.getElementById('theme-toggle');
 
-    // Add a click event listener
-    button.addEventListener('click', function() {
-      // Change the button's text
-      button.textContent = 'Hired!';
+    // Check localStorage for the current theme
+    let currentTheme = localStorage.getItem('theme') || 'light';
+
+    // Apply the saved theme
+    if (currentTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+        themeToggle.textContent = 'Dark';
+        themeToggle.style.color = 'black' ;
+    } else {
+        themeToggle.textContent = 'Bright';
+        // themeToggle.style.color = 'white';
+    }
+
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+
+        // Update the button text and save the current theme to localStorage
+        if (document.body.classList.contains('dark-theme')) {
+            themeToggle.textContent = 'Dark';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            themeToggle.textContent = 'Bright';
+            localStorage.setItem('theme', 'light');
+        }
     });
   </script>
 </body>
